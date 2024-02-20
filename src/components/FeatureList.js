@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalContext";
-import { Link } from "react-router-dom";
+// import About from "../components/about";
+import "../components/featurelist.css";
 
 const FeatureList = () => {
     const { states, func } = useContext(GlobalContext);
@@ -60,67 +61,67 @@ const FeatureList = () => {
     });
 
     return (
-        <div id="skill">
-        <div className="skill-main">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="main-title text-center wow fadeIn">
-                  <h3>My Skill</h3>
-                  <div className="underline1"></div>
-                  <div className="underline2"></div>
-                  <p>
-                    I value simple content structure, clean design patterns,
-                    and thoughtful interactions.
-                  </p>
-                </div>
-              </div>
+        <>
+      <div className="container">
+        <nav className="navbar navbar-expand-lg custom-nav mt-2">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+              LOGO
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Service
+                  </a>
+                </li>
+                <li className="nav-items">
+                  <a className="nav-link btn btn-sign-in">SIGN IN</a>
+                </li>
+              </ul>
             </div>
-            <div className="row love-row wow fadeIn">
-              <div className="col-md-6">
-                <div className="skill-details text-left">
-                  <p>
-                    UI/UX involves planning and iterating a site's structure
-                    and layout. Once the proper information architecture is in
-                    place, I design the visual layer to create a beautiful
-                    user experience. Front End Development is building out the
-                    visual components of a website. Using HTML, CSS, and
-                    Javascript, I build fast, interactive websites. This also
-                    may include a CMS, apis, or other integrations. The work
-                    that I am most interested in is 0-1 work (helping you get
-                    your idea into the world).
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="skill-details">
-                  <div className="content">
-                    <div className="col">
-                      <ul id="skill-main">
-                        <li>
-                          <h3>HTML / CSS - 97%</h3>
-                        </li>
-                        <li>
-                          <h3>UI / UX - 92%</h3>
-                        </li>
-                        <li>
-                          <h3>React JS - 30%</h3>
-                        </li>
-                        <li>
-                          <h3>PHP (Laravel) - 93%</h3>
-                        </li>
-                        <li>
-                          <h3>MySQL - 95%</h3>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+        </nav>
+      </div>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 mt-5">
+            <div className="contact-section">
+              <h1>CONTACT US</h1>
+              <h3>LANDING PAGE</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa soluta, nostrum harum ab porro consequuntur, expedita libero amet illum modi error necessitatibus. Asperiores voluptate cum eveniet labore corporis totam minus.
+              </p>
+              <button className="btn know-more" type="submit">
+                Know More
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </>
     );
 };
 

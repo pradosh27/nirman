@@ -15,7 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Register from "./pages/Register";
 import LoginRoute from "./layouts/LoginRoute";
 import ErrorPage from "./pages/ErrorPage";
-
+import Happyreview from "./pages/happyreview";
 const App = () => {
     return (
         <>
@@ -55,9 +55,11 @@ const App = () => {
                             />
                         </Route>
                         <Route path="*" element={<ErrorPage />} />
+                        <Route path="/happyreview" element={<Happyreview />} />
                     </Routes>
                 </GlobalProvider>
             </BrowserRouter>
+            {/* <a href="/about">about</a> */}
         </>
     );
 };

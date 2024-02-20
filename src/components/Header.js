@@ -26,8 +26,14 @@ const Header = () => {
             </div>
 
             <div className="navbar-end">
+                <NavLink
+                    to="explore-jobs"
+                    className="font-semibold hidden hover:text-primary lg:block mr-5"
+                >
+                    About Us
+                </NavLink>
                 {!isLoggedIn() ? (
-                    <NavLink to="login" className="btn btn-secondary bg-green-500">
+                    <NavLink to="login" className="btn btn-secondary bg-gree">
                         Login
                     </NavLink>
                 ) : (

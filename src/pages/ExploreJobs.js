@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
-import SearchBar from "../components/SearchBar";
+// import SearchBar from "../components/SearchBar";
 import AllJobList from "../components/AllJobList";
 import { GlobalContext } from "../context/GlobalContext";
+// import Happyreviews from "../pages/happyreview";
+import { Link } from "react-router-dom";
 
 const ExplereJobs = () => {
     const { states, func } = useContext(GlobalContext);
@@ -57,11 +59,13 @@ const ExplereJobs = () => {
                 <div className="flex flex-col items-center gap-10">
                     <div>
                         <h1 className="text-3xl font-bold text-center text-neutral-content font-geologica">
-                            Search Your Own Job
+                            About
                         </h1>
                     </div>
-                    <SearchBar color="input-secondary" />
                 </div>
+            </div>
+            <div className="main">
+                <Link to="../pages/happyreview">Review of the customers</Link>
             </div>
             <div className="px-20">
                 <div className="list-grid">
